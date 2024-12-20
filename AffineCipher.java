@@ -15,7 +15,7 @@ public class AffineCipher{
         while(repeat){
             System.out.println("Would you like to type your own key? (y/n) if you say no, the default key will be used.");
             String answer = inputScanner.nextLine();
-            if(answer == "y")
+            if(answer.equalsIgnoreCase("y"))
             {
                 System.out.println("Please enter the key. The key should be two numbers separated by a space. Example: 5(a) 8(b)");
                 String key = inputScanner.nextLine();
@@ -42,7 +42,7 @@ public class AffineCipher{
 
             System.out.println("Would you like to encrypt or decrypt another text? (y/n)");
             answer = inputScanner.nextLine();
-            if(answer == "n")
+            if(answer.equalsIgnoreCase("n"))
             {
                 repeat = false;
             }
